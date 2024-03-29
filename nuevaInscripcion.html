@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inicio</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+	<script src="js/index.js" defer></script>
+</head>
+
+<body>
+	<header class="encabezado">
+		<div class="contenedor-logo">
+			<img src="img/logoT.png" alt="Coyotes Neza" class="logo">
+			<h1>CF Coyotes Neza</h1>
+		</div>
+	</header>
+
+	<nav>
+		<ul class="menu">
+			<li><a href="">Inicio</a></li>
+			<li><a href="informacion.html">Información</a></li>
+			<li><a href="serviciosPrecios.html">Servicio y Precios</a></li>
+		</ul>
+
+		<ul class="menu-sesion">
+            <li><a href="cursos.html">Ver cursos</a></li>
+            <li><a href="inscripciones.html">Ver inscripciones</a></li>
+            <li><a href="nuevoCurso.html">Nuevo Registro Curso</a></li>
+			<li><a href="iniciarSesion.html" style="float: right;">Iniciar sesión</a></li>
+		</ul>
+	</nav>
+
+    <main>
+        <h1>Inscripción a cursos</h1>
+        
+        <form action="inscripciones.html" method="POST">
+            <div class="contenedor-input">
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso">
+                    <option value="" hidden>-Seleccione un curso-</option>
+                    <option value="opcion1">Acondicionamiento Físico</option>
+                    <option value="opcion2">Defensa Personal</option>
+                    <option value="opcion3">Competición</option>
+                </select>
+            </div>
+
+            <div class="contenedor-input">
+                <label for="instructores">Instructor:</label>
+                <select id="instructor" name="instructor">
+                    <option value="" hidden>-Seleccione un instructor-</option>
+                    <option value="Emiliano Rivas">Emiliano Rivas</option>
+                    <option value="Arturo Ramirez">Arturo Ramirez</option>
+                    <option value="Jessica Eslava">Jessica Eslava</option>
+                </select>
+            </div>
+
+            <div class="contenedor-input">
+                <label for="nivel">Nivel:</label>
+                <select id="nivel" name="nivel">
+                    <option value="" hidden>-Seleccione un nivel-</option>
+                    <option value="Principiante">Principiante</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+            </div>
+
+            <div class="contenedor-input">
+                <label for="horario">Horario:</label>
+                <select id="horario" name="horario">
+                    <option value="" hidden>-Seleccione un horario-</option>
+                    <option value="14:00 - 16:00">14:00 - 16:00</option>
+                    <option value="11:00 - 13:00">11:00 - 13:00</option>
+                    <option value="8:00 - 10:00">8:00 - 10:00</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Proceder" onclick="crearInscripcion()">
+        </form>
+    </main>
+
+	<footer class="footer">
+		<div>
+			<p><b>CLUB FAMILIAR COYOTES NEZA</b></p>
+			<p>V. de San Juan de los Lagos 145, Virgencitas, 57300 Cdad. Nezahualcóyotl, Méx</p>
+			<p>Tel: 55-59-46-06-46</p>
+			<td> &#169; Quantum Coder's derechos reservados</td>
+		</div>
+	</footer>
+</body>
+
+</html>
