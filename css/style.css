@@ -1,0 +1,253 @@
+/****************************************************/
+/* GENERAL */
+/****************************************************/
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F4F2F3;
+}
+
+.title {
+    font-size: 30px;
+    margin: 20px;
+}
+
+main {
+    padding: 50px;
+}
+
+/****************************************************/
+/* HEADER */
+/****************************************************/
+header {
+    width: 100%;
+    background-color: #0d0d0d;
+    color: #F4F2F3;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .contenedor-logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+header .logo {
+    width: 230px;
+    height: 350x;
+}
+
+header .contenedor-logo h1 {
+    font-size: 80px;
+    margin-left: 80px;
+}
+
+header .foto-perfil {
+    width: 250px;
+    color: #F4F2F3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+header .foto-perfil img {
+    width: 120px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+nav {
+    background-color: #131313;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav .menu {
+    padding-left: 0;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li:hover {
+    background-color: #2596be;
+}
+
+nav ul li a {
+    color: #F4F2F3;
+    text-decoration: none;
+}
+
+/****************************************************/
+/* TABLA CURSOS */
+/****************************************************/
+.contenedor-tabla {
+    width: 100%;
+    height: 50vh;
+    color: #040403;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-tabla .tabla {
+    border-collapse: collapse;
+}
+
+.contenedor-tabla .tabla .tabla-encabezado {
+    background-color: #040403;
+    color: #F4F2F3;
+}
+
+.contenedor-tabla .tabla .tabla-encabezado th {
+    padding: 20px;
+}
+
+.contenedor-tabla .tabla .tabla-cuerpo tr {
+    /*Aumentar el alto de la fila*/
+    height: 50px;
+    text-align: center;
+}
+
+.contenedor-tabla .tabla .tabla-cuerpo td {
+    padding: 10px;
+}
+
+.contenedor-tabla .tabla .tabla-cuerpo tr:nth-child(odd) {
+    background-color: #2596be;
+}
+
+/****************************************************/
+/* FORMULARIO */
+/****************************************************/
+form .contenedor-input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+form input, form select {
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #040403;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    width: 20%;
+    border: none;
+    background-color: #2596be;
+    color: #F4F2F3;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2db3e3;
+}
+
+/****************************************************/
+/* SERVICIOS Y PRECIOS */
+/****************************************************/
+.contenedor-clases {
+    /*formateo en css grid de 2 columnas*/
+    margin: 0 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.clase {
+    background-color: #2596be;
+    color: #040403;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+/****************************************************/
+/* Informacion */
+/****************************************************/
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+/****************************************************/
+/* INICIO */
+/****************************************************/
+.banner img {
+    width: 100%;
+    height: 100vh;
+}
+
+
+.fila {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Crea columnas que se ajustan automáticamente */
+    gap: 10px; /* Espacio entre las celdas de la grid */
+    margin: 0 auto; /* Centra la grid horizontalmente */
+    justify-content: center; /* Centra los elementos horizontalmente dentro de la grid */
+    align-items: center; /* Centra los elementos verticalmente dentro de la grid */
+}
+
+.fila .columna {
+    background-color: #626262;
+    margin: 0 auto;
+}
+
+.fila .columna .galeria {
+    max-width: 500px;
+    padding: 0;
+}
+
+.fila .columna img {
+    width: 100%;
+    height: auto;
+}
+
+.fila .columna .desc {
+    /* margin: 20px; */
+    text-align: center;
+    font-style: bold;
+    color: #F4F2F3;
+}
+
+
+/****************************************************/
+/* BOTONES */
+/****************************************************/
+.delete-button {
+    cursor: pointer;
+}
+
+.edit-button {
+    cursor: pointer;
+}
+
+/****************************************************/
+/* FOOTER */
+/****************************************************/
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #040403;
+    color: #F4F2F3;
+    text-align: center;
+    padding: 50px 10px;
+}

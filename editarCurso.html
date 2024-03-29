@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header class="encabezado"> 
+        <div class="contenedor-logo">
+            <img src="img/logoT.png" alt="Coyotes Neza" class="logo">
+            <h1>CF Coyotes Neza</h1>
+        </div> 
+
+        <div class="foto-perfil">
+            <p>Alfredo Manjarrez Vázquez</p>
+            <img src="img/Alfredo.png" alt="Coyotes Neza" width="150" height="120">
+        </div>
+    </header>
+    
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="informacion.html">Información</a></li>
+            <li><a href="serviciosPrecios.html">Servicio y Precios</a></li>
+        </ul>
+
+        <ul class="menu-sesion">
+            <li><a href="nuevoCurso.html">Nuevo Registro Curso</a></li>
+            <li><a href="index.html">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="title">Registro de Cursos</h1>
+
+        <form action="cursos.html" method="POST">
+
+            <div class="contenedor-input">
+                <label for="nombre_curso">Nombre del curso:</label>
+                <input type="text" id="nombre_curso" name="nombre_curso" required>
+            </div>
+
+            <div class="contenedor-input">
+                <label for="instructor">Instructor:</label>
+                <input type="text" id="instructor" name="instructor" required>
+            </div>
+
+            <div class="contenedor-input">
+                <label for="horario">Horario:</label>
+                <input type="text" id="horario" name="horario" required>
+            </div>
+
+            <div class="contenedor-input">
+                <label for="nivel">Nivel del curso:</label>
+                
+                <select id="nivel" name="nivel">
+                    <option value="Principiante">Principiante</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+            </div>
+
+            <div class="contenedor-input">
+                <label for="fecha_inicio">Fecha de inicio:</label>
+                <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+            </div>
+
+            <input type="submit" value="Registrar Curso" onclick="crearCurso()">
+        </form>
+    </main>
+
+    <footer class="footer">
+		<div>
+			<p><b>CLUB FAMILIAR COYOTES NEZA</b></p>
+			<p>V. de San Juan de los Lagos 145, Virgencitas, 57300 Cdad. Nezahualcóyotl, Méx</p>
+			<p>Tel: 55-59-46-06-46</p>
+			<td> &#169; Quantum Coder's derechos reservados</td>
+		</div>
+	</footer>
+</body>
+
+</html>
