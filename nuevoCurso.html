@@ -72,7 +72,8 @@
                 <input type="date" id="fecha_inicio" name="fecha_inicio" required>
             </div>
 
-            <input type="submit" value="Registrar Curso" onclick="crearCurso()">
+            <input type="submit" value="Registrar Curso" id="botonRegistrar" onclick="crearCurso()">
+            <input type="submit" value="Actualizar Curso" id="botonActualizar" style="display: none;" onclick="actualizarCurso()">
         </form>
     </main>
 
@@ -84,6 +85,27 @@
 			<td> &#169; Quantum Coder's derechos reservados</td>
 		</div>
 	</footer>
+
+    <!-- SCRIPT PARA LA EDICION DE CURSOS -->
+    <script>
+        window.onload = function() {
+            // Obtener el curso a editar del sessionStorage
+            var curso_editar = JSON.parse(sessionStorage.getItem("curso_editar"));
+            
+            // Si hay un curso para editar, cambia el texto del botón a "Actualizar"
+            if (curso_editar) {
+                document.getElementById("botonRegistrar").style.display = "none";
+                document.getElementById("botonActualizar").style.display = "block";
+
+                // Llenar los campos del formulario con los datos del curso a editar
+                document.getElementById("nombre_curso").value = curso_editar.nombre_curso;
+                document.getElementById("instructor").value = curso_editar.instructor;
+                document.getElementById("horario").value = curso_editar.horario;
+                document.getElementById("nivel").value = curso_editar.nivel_del_curso;
+                document.getElementById("fecha_inicio").value = curso_editar.fecha_inicio;
+            }
+        }
+    </script>
 </body>
 
 </html>

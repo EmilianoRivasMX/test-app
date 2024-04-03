@@ -181,8 +181,23 @@ form input[type="submit"]:hover {
     justify-content: space-between;
 }
 
+.contenedor-tarjeta {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contenedor-tarjeta .contenedor-input {
+    width: 100%;
+}
+
+.contenedor-tarjeta .contenedor-input input {
+    width: 90%;
+}
+
 /****************************************************/
-/* Informacion */
+/* INFORMACION */
 /****************************************************/
 .informacion {
     display: flex;
@@ -190,6 +205,7 @@ form input[type="submit"]:hover {
     align-items: center;
     margin: 0px 0px;
 }
+
 
 /****************************************************/
 /* INICIO */
@@ -231,6 +247,16 @@ form input[type="submit"]:hover {
     color: #F4F2F3;
 }
 
+/****************************************************/
+/* INSCRITO */
+/****************************************************/
+.mensaje-inscrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /****************************************************/
 /* BOTONES */
@@ -250,6 +276,21 @@ form input[type="submit"]:hover {
     background-color: #040403;
 }
 
+.boton-azul {
+    background-color: #2596be;
+    color: #F4F2F3;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton-azul:hover {
+    background-color: #2db3e3;
+}
+
 .delete-button {
     cursor: pointer;
 }
@@ -262,10 +303,11 @@ form input[type="submit"]:hover {
 /* FOOTER */
 /****************************************************/
 .footer {
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: #040403;
     color: #F4F2F3;
     text-align: center;
-    padding: 50px 10px;
+    padding: 50px 0px;
 }
